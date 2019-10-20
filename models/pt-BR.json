@@ -1,39 +1,127 @@
 {
-    "interactionModel": {
-        "languageModel": {
-            "invocationName": "olá mundo",
-            "intents": [
-                {
-                    "name": "AMAZON.CancelIntent",
-                    "samples": []
-                },
-                {
-                    "name": "AMAZON.HelpIntent",
-                    "samples": []
-                },
-                {
-                    "name": "AMAZON.StopIntent",
-                    "samples": []
-                },
-                {
-                    "name": "HelloWorldIntent",
-                    "slots": [],
-                    "samples": [
-                        "olá",
-                        "como vai você",
-                        "diga oi mundo",
-                        "diga oi",
-                        "oi",
-                        "diga olá mundo",
-                        "diga olá"
-                    ]
-                },
-                {
-                    "name": "AMAZON.NavigateHomeIntent",
-                    "samples": []
-                }
-            ],
-            "types": []
-        }
-    }
+  "interactionModel": {
+      "languageModel": {
+          "invocationName": "assistente milia",
+          "intents": [
+              {
+                  "name": "AMAZON.CancelIntent",
+                  "samples": []
+              },
+              {
+                  "name": "AMAZON.HelpIntent",
+                  "samples": [
+                      "ajuda",
+                      "me ajuda",
+                      "nao sei por onde começar",
+                      "nao sei o que posso perguntar"
+                  ]
+              },
+              {
+                  "name": "AMAZON.StopIntent",
+                  "samples": []
+              },
+              {
+                  "name": "AMAZON.NavigateHomeIntent",
+                  "samples": []
+              },
+              {
+                  "name": "AttractionsIntent",
+                  "slots": [
+                      {
+                          "name": "any",
+                          "type": "AMAZON.SearchQuery"
+                      }
+                  ],
+                  "samples": [
+                      "como faço pra ir pro {any}",
+                      "como chegar na {any}",
+                      "caminho pra {any}",
+                      "como ir até a {any}",
+                      "como ir até o {any}",
+                      "como me locomover até {any}",
+                      "que caminho eu faço pra ir pra {any}",
+                      "que caminho eu poderia fazer pra chegar na {any}",
+                      "como eu chego no {any}",
+                      "onde fica o {any}",
+                      "como ir pro {any}",
+                      "quero visitar a {any}",
+                      "como faço pra chegar no {any}",
+                      "saber como chego no {any}"
+                  ]
+              },
+              {
+                  "name": "DocumentsIntent",
+                  "slots": [
+                      {
+                          "name": "country",
+                          "type": "AMAZON.Country"
+                      }
+                  ],
+                  "samples": [
+                      "o que é necessário pra ir pra {country}",
+                      "quais são os documentos necessários pra {country}",
+                      "documentos pra viajar pros {country}",
+                      "documentos necessários",
+                      "documentos obrigatórios",
+                      "o que precisa pra viajar pra {country}",
+                      "ir pra {country} precisa de passaporte",
+                      "preciso de quais documentos pra viajar pra {country}",
+                      "pra viajar pra {country} precisa da vacina da febre amarela",
+                      "quais as vacinas que preciso tomar pra ir pra {country}",
+                      "precisa de visto pra ir pro {country}",
+                      "precisa tirar visto pra {country}",
+                      "precisa de passaporte pra {country}",
+                      "vacinas obrigatórias pra viajar pra {country}",
+                      "saber oque preciso pra viajar pra {country}"
+                  ]
+              },
+              {
+                  "name": "FoodIntent",
+                  "slots": [
+                      {
+                          "name": "country",
+                          "type": "AMAZON.Country"
+                      }
+                  ],
+                  "samples": [
+                      "quero saber os pratos típicos da {country}",
+                      "o que tem de comida típica na {country}",
+                      "pratos típicos da {country}",
+                      "qual sobremesa posso comer na {country}",
+                      "qual sobremesa posso comer em {country}",
+                      "qual é o prato típico dos {country}",
+                      "quais são as comidas típicas {country}"
+                  ]
+              },
+              {
+                  "name": "WhatToDoIntent",
+                  "slots": [
+                      {
+                          "name": "city",
+                          "type": "AMAZON.City"
+                      }
+                  ],
+                  "samples": [
+                      "quais são os melhores pontos turísticos de {city}",
+                      "quais são os melhores lugares pra visitar em {city}",
+                      "melhores lugares de {city}",
+                      "lugares para visitar em {city}",
+                      "me fale sobre os pontos turísticos de {city}",
+                      "onde posso ir em {city}",
+                      "quero saber os pontos turísticos de {city}",
+                      "o que posso fazer em {city}",
+                      "o que visitar em {city}",
+                      "onde passear em {city}",
+                      "lugares para passear em {city}",
+                      "tem o que pra ver {city}",
+                      "tem o que pra fazer em {city}",
+                      "o que tem pra fazer em {city}",
+                      "o que tem pra visitar em {city}",
+                      "saber o que visitar em {city}"
+                  ]
+              }
+          ],
+          "types": []
+      }
+  }
 }

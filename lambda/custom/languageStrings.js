@@ -1,97 +1,25 @@
-/* *
- * We create a language strings object containing all of our strings.
- * The keys for each string will then be referenced in our code, e.g. handlerInput.t('WELCOME_MSG').
- * The localisation interceptor in index.js will automatically choose the strings
- * that match the request's locale.
- * */
 
 module.exports = {
-    en: {
-        translation: {
-            WELCOME_MSG: 'Welcome, you can say Hello or Help. Which would you like to try?',
-            HELLO_MSG: 'Hello World!',
-            HELP_MSG: 'You can say hello to me! How can I help?',
-            GOODBYE_MSG: 'Goodbye!',
-            REFLECTOR_MSG: 'You just triggered {{intentName}}',
-            FALLBACK_MSG: 'Sorry, I don\'t know about that. Please try again.',
-            ERROR_MSG: 'Sorry, I had trouble doing what you asked. Please try again.'
-        }
-    },
-    es: {
-        translation: {
-            WELCOME_MSG: 'Bienvenido, puedes decir Hola o Ayuda. Cual prefieres?',
-            HELLO_MSG: 'Hola Mundo!',
-            HELP_MSG: 'Puedes decirme hola. Cómo te puedo ayudar?',
-            GOODBYE_MSG: 'Hasta luego!',
-            REFLECTOR_MSG: 'Acabas de activar {{intentName}}',
-            FALLBACK_MSG: 'Lo siento, no se nada sobre eso. Por favor inténtalo otra vez.',
-            ERROR_MSG: 'Lo siento, ha habido un error. Por favor inténtalo otra vez.'
-        }
-    },
-    de: {
-        translation: {
-            WELCOME_MSG: 'Wilkommen, du kannst Hallo oder Hilfe sagen. Was würdest du gern tun?',
-            HELLO_MSG: 'Hallo!',
-            HELP_MSG: 'Du kannst hallo zu mir sagen. Wie kann ich dir helfen?',
-            GOODBYE_MSG: 'Tschüss!',
-            REFLECTOR_MSG: 'Du hast gerade {{intentName}} ausgelöst',
-            FALLBACK_MSG: 'Es tut mir leid, ich weiss das nicht. Bitte versuche es erneut.',
-            ERROR_MSG: 'Es tut mir leid, ich konnte das nicht machen. Bitte versuche es erneut.'
-        }
-    },
-    ja: {
-        translation: {
-            WELCOME_MSG: 'ようこそ。こんにちは、または、ヘルプ、と言ってみてください。どうぞ！',
-            HELLO_MSG: 'ハローワールド',
-            HELP_MSG: 'こんにちは、と言ってみてください。どうぞ！',
-            GOODBYE_MSG: 'さようなら',
-            REFLECTOR_MSG: '{{intentName}}がトリガーされました。',
-            FALLBACK_MSG: 'ごめんなさい。ちょっとよくわかりませんでした。もう一度言ってみてください。',
-            ERROR_MSG: 'ごめんなさい。なんだかうまく行かないようです。もう一度言ってみてください。'
-        }
-    },
-    fr: {
-        translation: {
-            WELCOME_MSG: 'Bienvenue sur le génie des salutations, dites-moi bonjour et je vous répondrai',
-            HELLO_MSG: 'Bonjour à tous!',
-            HELP_MSG: 'Dites-moi bonjour et je vous répondrai!',
-            GOODBYE_MSG: 'Au revoir!',
-            REFLECTOR_MSG: 'Vous avez invoqué l\'intention {{intentName}}',
-            FALLBACK_MSG: 'Désolé, je ne sais pas. Pouvez-vous reformuler?',
-            ERROR_MSG: 'Désolé, je n\'ai pas compris. Pouvez-vous reformuler?'
-        }
-    },
-    it: {
-        translation: {
-            WELCOME_MSG: 'Buongiorno! Puoi salutarmi con un ciao, o chiedermi aiuto. Cosa preferisci fare?',
-            HELLO_MSG: 'Ciao!',
-            HELP_MSG: 'Dimmi ciao e io ti risponderò! Come posso aiutarti?',
-            GOODBYE_MSG: 'A presto!',
-            REFLECTOR_MSG: 'Hai invocato l\'intento {{intentName}}',
-            FALLBACK_MSG: 'Perdonami, penso di non aver capito bene. Riprova.',
-            ERROR_MSG: 'Scusa, c\'è stato un errore. Riprova.'
-        }
-    },
     pt: {
         translation: {
-            WELCOME_MSG: 'Bem vindo, você pode dizer Olá ou Ajuda. Qual você gostaria de fazer?',
-            HELLO_MSG: 'Olá!',
-            HELP_MSG: 'Você pode dizer olá para mim. Como posso te ajudar?',
-            GOODBYE_MSG: 'Tchau!',
+            WELCOME_MSG1: 'Olá, viajante! Eu sou a Milia e estou aqui para ajudar a tornar sua viagem mais legal. Do que você precisa?',
+            WELCOME_MSG2: 'Olá, turista! Sou a assistente virtual Milia. Minha missão é deixar seu turismo ainda mais incrível! Como posso te ajudar hoje?',
+            WELCOME_MSG3: 'Bem-vindo a Milia, sua assistente virtual pronto pra te ajudar em qualquer momento da sua viagem. Comece dizendo algo que você está precisando!',
+            WELCOME_MSG4: 'Olá mochileiro! Estou pronta para te ajudar. O que manda?',
+            WELCOME_MSG5: 'Opa, estou aqui! Sou a Milia, 24 horas disponível pra você :) O que você precisa?',
+            HELP_MSG1: 'Você pode me perguntar sobre lugares, o que fazer em determinadas cidades, e eu te envio no xati do meu aplicativo Milia para te ajudar :)',
+            HELP_MSG2: 'Posso te ajudar dando dicas como chegar em determinados lugares, quais são os pontos turísticos de algumas cidades, e eu te envio agora no xati do meu aplicativo para você. Do que você precisa?',
+            HELP_MSG3: 'Sou uma assistente virtual para sua viagem, e posso te ajudar a encontrar lugares, pontos turísticos e muito mais no país que você estiver. Pelo meu aplicativo, você tem um universo de coisas legais pra explorar. Comece perguntando qualquer coisa que precisar :)',
+            HELP_MSG4: 'Consigo ajudar você a encontrar bons lugares pra visitar, pontos turísticos, e muito mais através do meu aplicativo Milia. Tente me fazer uma pergunta!',
+            HELP_MSG5: 'Fico disponível 24h por dia para ajudar você, viajante, a ter mais facilidade durante a viagem. Você pode me perguntar como chegar em pontos turísticos, o que fazer em qualquer cidade, e muito mais se você tiver meu aplicativo Milia baixado. Como posso te ajudar agora?',
+            GOODBYE_MSG1: 'Tchau, boa viagem!',
+            GOODBYE_MSG2: 'Tchau, bom passeio!',
+            GOODBYE_MSG3: 'Tchau, divirta-se!',
+            GOODBYE_MSG4: 'Tchau mochileiro!',
+            GOODBYE_MSG5: 'Tchau viajante!',
             REFLECTOR_MSG: 'Você acabou de ativar {{intentName}}',
             FALLBACK_MSG: 'Desculpe, não sei o que dizer. Por favor tente novamente.',
             ERROR_MSG: 'Desculpe, não consegui fazer o que você pediu. Por favor tente novamente.'
         }
     },
-    hi: {
-        translation: {
-            WELCOME_MSG: 'नमस्ते, आप hello या help कह सकते हैं. आप क्या करना चाहेंगे?',
-            HELLO_MSG: 'नमस्ते दुनिया ',
-            HELP_MSG: 'आप मुझसे hello बोल सकते हो.',
-            GOODBYE_MSG: 'अलविदा ',
-            REFLECTOR_MSG: 'आपने {{intentName}} trigger किया हैं ',
-            FALLBACK_MSG: 'Sorry, मैं वो समझ नहीं पायी. क्या आप दोहरा सकते हैं ',
-            ERROR_MSG: 'Sorry, मैं वो समझ नहीं पायी. क्या आप दोहरा सकते हैं '
-        }
-    }
 }
